@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+var arr1 = [1,2,3,4,5];
+var arr2 = [7,8,2,9,3,4];
+// var unionArr = _.union(arr1,arr2);
+// // console.log(unionArr);
+// // var arr3 = arr1.concat(arr2).unique();
+// // Array.prototype.unique = function() {
+// //     var a = this.concat();
+// //     for(var i=0; i<a.length; ++i) {
+// //         for(var j=i+1; j<a.length; ++j) {
+// //             if(a[i] === a[j])
+// //                 a.splice(j--, 1);
+// //         }
+// //     }
+
+// //     return a;
+// // };
+function unique(arrayName)
+{
+  var newArray=new Array();
+  label: for(var i=0; i<arrayName.length;i++ )
+  {  
+    for(var j=0; j<newArray.length;j++ )
+    {
+      if(newArray[j]==arrayName[i]) 
+        continue label;
+    }
+    newArray[newArray.length] = arrayName[i];
+  }
+  return newArray;
+}
+
+var union = unique(arr1.concat(arr2));
+console.log(union);
+</script>
+</body>
+</html>

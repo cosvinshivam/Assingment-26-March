@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+var str1 = prompt('Enter String:');
+var str2 = prompt('Enter subString:');
+
+
+	function count(str, letter) 
+{
+ var C = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      C += 1;
+      }
+  }
+  return C;
+}
+
+console.log(count(str1,str2));
+</script>
+</body>
+</html>
+
+

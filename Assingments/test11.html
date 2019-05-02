@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	  var str = prompt("enter string");
+	  var str1=prompt("enter string to search:"); 
+  var n1 = str.search(str1);
+  var n = str.includes(str1);
+
+
+
+	function count(str, letter) 
+{
+ var C = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      C += 1;
+      }
+  }
+  return C;
+}
+
+if(n)
+{
+	console.log("String Exists at "+n1+"position");
+}
+else
+console.log("Not Exists");
+console.log("No of Occurence:"+count(str,str1));
+</script>
+</body>
+</html>
