@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <script type="text/javascript">	
+ // var u = document.getElementById("w3r").href;
+function get_href()
+{
+var array = [];
+var links = document.getElementsByTagName("a");
+alert("running");
+for(var i=0; i<links.length; i++) {
+    array.push(links[i].href);
+}
+for (var i = 0; array.length; i++)
+{
+	document.write(array[i]);
+}
+}
+ </script>
+ <body> 
+<p><a id="w3r"  href="https://www.w3resource.com/">w3resource</a></p> 
+<button onclick="get_href()">Click</button>  
+
+<!--  <p onload="" ="get_href()">
+ 	<a href="hello">yoo</a>
+ 	<a href="ho">yoo</a>
+ 	<a href="ello">yoo</a>
+ 	<a href="llo">yoo</a>
+ 	<a href="hello">yoo</a>
+ 	<a href="o">yoo</a>
+ 	<a href="heo">yoo</a>
+ </p> -->
+ <!-- <button onclick="get_href()">calculate</button> -->
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

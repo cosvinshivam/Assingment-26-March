@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  Select a Elements:
+  <select id="mySelect" >
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JAVASCRIPT">JAVASCRIPT</option>
+    <option value="JAVA">JAVA</option>
+  </select>
+
+<br>
+
+<button onclick="myFunction()">Remove</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect");
+  x.remove(x.selectedIndex);
+}
+</script>
+
+</body>
+</html>
