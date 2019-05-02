@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Last Row</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+  $(document).ready(function() {
+     $("#b1").click(function() {
+      
+  $("#ItemsTable").each(function(){
+    $(this).find("tr:last").remove();
+});
+ });
+ });
+</script>
+
+<table id="ItemsTable">
+  <tr><th>NAME</th><th>CLASS</th><th>AGE</th></tr>
+   <tr><td>Shivam</td><td>1st</td><td>22</td></tr> 
+   <tr><td>Palak</td><td>1st</td><td>22</td></tr> 
+   <tr><td>Krishna</td><td>1st</td><td>22</td></tr> 
+</table>
+<button id="b1">Remove</button>
+</body>
+</html>
+
+
+

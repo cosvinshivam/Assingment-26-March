@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Dynamic Row</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<table id="ItemsTable">
+  <tr><th>NAME</th><th>CLASS</th><th>AGE</th></tr>
+   <tr><td>Shivam</td><td>1st</td><td>22</td></tr> 
+   <tr><td>Palak</td><td>1st</td><td>22</td></tr> 
+   <tr><td>Krishna</td><td>1st</td><td>22</td></tr> 
+
+</table>
+
+	<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			var n=prompt("Enter Name:");
+			var c=prompt("Enter Class:");
+			var a=prompt("Enter Age:");
+			$('table').append('<tr><td>'+n+'</td><td>'+c+'</td><td>'+a+'</td></tr>');
+			
+		});
+	</script>
+</body>
+</html>
