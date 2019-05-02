@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	var x=prompt("Enter data:");
+$(document).ready(function(){ 
+  $('#b').click(function(){ 
+   $("#s_id").html(x);
+   });	
+});
+</script>
+<p><span id="s_id" style="color:red"> </span>.</p>
+<button id="b">Click</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html>
+ <head>
+	<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+  <body>
+  	  <select id="myColor">
+  <option value="Red" id="r">Red</option>
+  <option value="Blue"vid="b">Blue</option>
+  <option value="Green vid="G">Green</option>
+  </select>
+  	<!-- <input type="button" class="button" value="Click to Remove all Options" /> -->
+  	<button class="button">REMOVE</button>
+ 
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+		$("button").click(function(event) {
+	   $("#myColor").find('option').empty();
+	    $("#myColor").append("<option>Hello</option>");
+	});});
+
+ </script>
+  </body>
+  </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>When the html doc finishes loading, add 3 elements within an unordered list</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+	</ul>
+	<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			$('ul').append('<li>d</li>');
+			$('ul').append('<li>e</li>');
+			$('ul').append('<li>f</li>');
+
+		});
+	</script>
+</body>
+</html>
