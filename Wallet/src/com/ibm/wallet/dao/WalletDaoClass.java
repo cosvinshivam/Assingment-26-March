@@ -42,7 +42,7 @@ public class WalletDaoClass implements WalletDaoInterface {
 		PreparedStatement ps=con.prepareStatement(sql1);
 			pstmt.setLong(1, w.getAcct_no());
 			pstmt.setString(2,w.getName() );
-			System.out.println("NAME:"+w.getName());
+			//System.out.println("NAME:"+w.getName());
 			pstmt.setLong(3, Long.parseLong(w.getContact()));
 			pstmt.setString(4,w.getAddress());
 			ps.setLong(1, w.getAcct_no());
@@ -104,13 +104,13 @@ public class WalletDaoClass implements WalletDaoInterface {
 		    psender.setLong(2, w.getAcct_no());
 			preceiver.setLong(1, bal);
 			preceiver.setLong(2,w.getAcct_no());
-			 PreparedStatement ps=con.prepareStatement(sql2);
-				ps.setLong(1, w.getAcct_no());
-				ps.setLong(2, w.getTacct_no());
-				ps.setString(3,bal+" has been credited in  account on  "+new Date());
-				ps.setString(4,"Fund Transfer");
-				 java.sql.Date sqldate=new  java.sql.Date(new Date().getTime());
-				ps.setDate(5,sqldate);
+			PreparedStatement ps=con.prepareStatement(sql2);
+			ps.setLong(1, w.getAcct_no());
+			ps.setLong(2, w.getTacct_no());
+			ps.setString(3,bal+" has been credited in  account on  "+new Date());
+			ps.setString(4,"Fund Transfer");
+			java.sql.Date sqldate=new  java.sql.Date(new Date().getTime());
+			ps.setDate(5,sqldate);
 
 			if(preceiver.executeUpdate()>0&& psender.executeUpdate()>0&& ps.executeUpdate()>0)
 				System.out.println("Fund Transfered Sucessfully ....... ");
@@ -240,6 +240,7 @@ public class WalletDaoClass implements WalletDaoInterface {
 		int flag=0;
 		String sql="select * from amount_table";
 		try {
+			//System.out.println("working.............");
 			pstmt=con.prepareStatement(sql);
 		    PreparedStatement ps=con.prepareStatement(sql);
 		    ResultSet rs=pstmt.executeQuery();

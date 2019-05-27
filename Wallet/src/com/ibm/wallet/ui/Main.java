@@ -13,7 +13,7 @@ public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
 	String c="y";
 	do {
-		System.out.println("\n\n\t\t\tWELCOME IN IBM'S WALLET\n\n");
+		System.out.println("\n\n\t\t\tWELCOME In IBM'S WALLET\n\n");
 	System.out.println("\tEnter ur choice:\n\t1)Open Acc\n\t2)Withdraw\n\t3)Deposit\n\t4)Fund Transfer\n\t5)Transactions\n\t6)Check Balance\n\t");
 	int ch=sc.nextInt();
 	sc.nextLine();
